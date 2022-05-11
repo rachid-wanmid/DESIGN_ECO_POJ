@@ -5,6 +5,9 @@ a{
     text-decoration: none;
     color: #000 !important;
 }
+.logo span{
+    font-size: 30px;
+}
 .search,.search .ipt , .btr{
     border-radius: 20px !important;
 }
@@ -111,7 +114,7 @@ box-shadow: 0px 16px 12px -20px rgba(0,0,0,0.50);
     border-radius: 20px;
     border: rgba(0, 0, 0, 0.158) 1px solid;
 }
-.active{
+.act{
     border: 2px solid#1362e29c !important;
 
 }
@@ -121,18 +124,30 @@ box-shadow: 0px 16px 12px -20px rgba(0,0,0,0.50);
     font-weight: 700;
 }
 .quantité{
-    width: 120px;
+    width: 220px;
 }
 .adto button{
     border: none;
     background-color: #000000;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 30px;
     width: 200px;
 }
-
+.adto button:hover{
+    background-color: #1363E2;
+}
 .adto a{
     color: #fff !important;
     font-weight: 600;
     font-size: 17px;
+}
+.heart{
+    border-radius: 50px;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+.heart svg:hover{
+    color: #1363E2 !important;
 }

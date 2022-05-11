@@ -10,9 +10,8 @@
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container-fluid ">
-            <a class="navbar-brand bg-white fw-bold ms-4" href="#">
-                <span>Admin</span>
+        <div class="container ">
+            <a class="navbar-brand bg-white fw-bold ms-4 logo pb-3" href="index.html">
                 <span>K</span>OLCHI<span>.</span>
             </a>
             <div class="ms-5 d-lg-none ms-auto">
@@ -29,6 +28,11 @@
                         <span class="visually-hidden"></span> 
                        </div>
                  </a>
+                 <a href="#" class="me-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                  </svg>
+                 </a>
             </div>
           <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -36,7 +40,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Store</a>
@@ -51,12 +55,6 @@
                   <li><hr class="dropdown-divider"></li>
                   <li><a class="dropdown-item" href="#">Category 3</a></li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#" >Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link Register" href="#" >Register</a>
               </li>
             </ul>
             <form class="d-flex  search w-50 m-auto">
@@ -82,6 +80,11 @@
                 <span class="visually-hidden"></span> 
                </div>
             </a>
+            <a href="#" class="me-4">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+              </svg>
+            </a>
        </div>
         </div>
       </nav>
@@ -92,24 +95,30 @@
                   <img src="images/1 (1).jpg " class="img-fluid" alt="">
               </div>
               <div class="col-12 d-flex justify-content-around pucadm pt-4">
-                <img src="images/1 (1).jpg" class="active" alt="">
+                <img src="images/1 (1).jpg" class="act" alt="">
                 <img src="images/2 (1).jpg" alt="">
                 <img src="images/3 (1).jpg" alt="">
                 <img src="images/4 (1).jpg" alt="">
               </div>
           </div>
           <div class="col-lg-6 col-sm-12 col-md-4 pt-3 ps-5">
-              <h3 class="fw-bold pb-4 pt-3">Apple - Apple Watch Series 3 White Sports Band</h3>
+              <h3 class="fw-bold pb-3 pt-3">Apple - Apple Watch Series 3 White Sports Band</h3>
               <hr>
               <span class = "product-price">100.50 DH</span>
               <span class = "old-price text-dark ">200.50 DH</span>
               <div class="pt-3 ps-1 row">
                 <p class="col-12">QUANTITÉ</p>
-                <div class="quantité col-5 pt-1">
-                  <a class="pe-5" href="">-</a>2<a class="ps-5" href="">+</a>
-                  <hr class="quantité">
+                <div class="quantité col-4 pt-2 row">
+                  <a class="col-4 text-center" href="">-</a><P class="col-4 text-center">20</P><a class="col-4 text-center" href="">+</a>
+                  <hr class="ms-4 col-9">
                 </div>
-                <div class="col-5 ps-5 adto" ><button><a href="">Add to Cart</a></button></div>
+                <div class="col-4 ps-1 pt-1 adto" ><button><a href="">Add to Cart</a></button></div>
+                <div class="col-4 ps-5" ><button class="heart"><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                </svg></a></button></div>
+              </div>
+              <div class="ps-1 pt-3">
+                <p>PRODUCT DETAILS</p>
               </div>
           </div>
         </div>
