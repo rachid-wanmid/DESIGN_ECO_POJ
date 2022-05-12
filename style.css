@@ -38,6 +38,17 @@ box-shadow: 0px 16px 12px -20px rgba(0,0,0,0.50);
 .pointer{
     cursor: pointer;
 }
+.big-title{
+    margin:  0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+.hr-title{
+    margin: 0 auto;
+    width: 260px;
+    padding: 2px;
+    color: #1363E2;
+}
 
 
 
