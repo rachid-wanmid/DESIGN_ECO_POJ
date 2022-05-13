@@ -222,4 +222,15 @@ box-shadow: 0px 16px 12px -20px rgba(0,0,0,0.50);
 
 
 
+/* aside */
+
+aside{
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+
+
+
 
