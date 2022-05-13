@@ -1,149 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Page</title>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white ">
-        <div class="container">
-            <a class="navbar-brand bg-white fw-bold ms-4 logo pb-3" href="index.html">
-                <span>K</span>OLCHI<span>.</span>
-            </a>
-            <div class="ms-5 d-lg-none ms-auto">
-              <a href="#" class="me-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                    <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-                </svg>
-             </a>
-             <a href="#" class="me-3 position-relative ">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                </svg>
-                <div class="spinner-grow crtp position-absolute" role="status">
-                    <span class="visually-hidden"></span> 
-                   </div>
-             </a>
-             <a href="#" class="me-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
-              </svg>
-             </a>
-            </div>
-          <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Store</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Category
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Category 1</a></li>
-                  <li><a class="dropdown-item" href="#">Category 2</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Category 3</a></li>
-                </ul>
-              </li>
-            </ul>
-            <form class="d-flex  search w-50 m-auto">
-              <input class="form-control me-2 ipt border-0 shadow-none" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success btr border-0 shadow-none" type="submit">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                </svg>
-            </button>
-            </form>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <div class="container">
+      <a class="navbar-brand bg-white fw-bold ms-4 logo pb-3" href="index.html">
+        <span>K</span>OULCHI<span>.</span>
+      </a>
+      <div class="ms-5 d-lg-none ms-auto">
+        <a href="#" class="me-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
+            viewBox="0 0 16 16">
+            <path
+              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+          </svg>
+        </a>
+        <a href="#" class="me-3 position-relative ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+          </svg>
+          <div class="spinner-grow crtp position-absolute" role="status">
+            <span class="visually-hidden"></span>
           </div>
-          <div class="ms-5 d-lg-block d-none">
-            <a href="#" class="me-3">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
-                  <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
-              </svg>
-           </a>
-           <a href="#" class="me-3 position-relative ">
-              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-              </svg>
-              <div class="spinner-grow crtp position-absolute" role="status">
-                  <span class="visually-hidden"></span> 
-                 </div>
-           </a>
-           <a href="#" class="me-3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
-              <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+        </a>
+        <a href="#" class="me-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill"
+            viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+          </svg>
+        </a>
+      </div>
+      <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Store</a>
+          </li>
+        </ul>
+        <form class="search w-50 m-auto d-none d-lg-flex">
+          <input class="form-control me-2 ipt border-0 shadow-none" type="search" placeholder="Search"
+            aria-label="Search">
+          <button class="btn btn-outline-success btr border-0 shadow-none" type="submit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
             </svg>
-           </a>
-       </div>
+          </button>
+        </form>
+      </div>
+      <div class="ms-5 d-lg-block d-none">
+        <a href="#" class="me-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-heart"
+            viewBox="0 0 16 16">
+            <path
+              d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
+          </svg>
+        </a>
+        <a href="#" class="me-3 position-relative ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart"
+            viewBox="0 0 16 16">
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+          </svg>
+          <div class="spinner-grow crtp position-absolute" role="status">
+            <span class="visually-hidden"></span>
+          </div>
+        </a>
+        <a href="#" class="me-3">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person-fill"
+            viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <form class="d-flex  search w-75 m-auto d-lg-none">
+      <input class="form-control me-2 ipt border-0 shadow-none" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success btr border-0 shadow-none" type="submit">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search"
+          viewBox="0 0 16 16">
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+        </svg>
+      </button>
+    </form>
+  </nav>
+  <main class="container mt-5">
+    <div class="row pt-5 ps-4">
+      <div class="col-lg-5 col-sm-12 col-md-5 row pt-4 d-flex flex-column ">
+        <div class="col-12 big">
+          <img src="images/1 (1).jpg " class="img-fluid" alt="">
         </div>
-      </nav>
-      <main class="container">
-        <div class="row pt-5 ps-4">
-          <div class="col-lg-5 col-sm-12 col-md-5 row pt-4 d-flex flex-column ">
-              <div class="col-12 big">
-                  <img src="images/1 (1).jpg " class="img-fluid" alt="">
-              </div>
-              <div class="col-12 d-flex justify-content-center pucadm pt-3 row">
-                <img src="images/1 (1).jpg" class="act col-3 mt-4" alt="">
-                <img src="images/2 (1).jpg" class="col-3 mt-4 " alt="">
-                <img src="images/3 (1).jpg" class="col-3 mt-4 " alt="">
-                <img src="images/4 (1).jpg" class="col-3 mt-4 " alt="">
-              </div>
+        <div class="col-12 d-flex justify-content-center pucadm pt-3 row">
+          <img src="images/1 (1).jpg" class="act col-3 mt-4" alt="">
+          <img src="images/2 (1).jpg" class="col-3 mt-4 " alt="">
+          <img src="images/3 (1).jpg" class="col-3 mt-4 " alt="">
+          <img src="images/4 (1).jpg" class="col-3 mt-4 " alt="">
+        </div>
+      </div>
+      <div class="col-lg-7 col-sm-12 col-md-7 pt-3 ps-lg-5">
+        <h3 class="fw-bold pb-3 pt-3">Apple - Apple Watch Series 3 White Sports Band</h3>
+        <hr>
+        <span class="product-price">100.50 DH</span>
+        <span class="old-price text-dark ">200.50 DH</span>
+        <p class=" fw-bold pt-3 ps-1">QUANTITÉ</p>
+        <div class="pt-2 ps-1 row col-12 d-flex justify-content-around">
+          <div class="quantité col-5 pt-2 row">
+            <a class=" col-4 text-center" href="">-</a>
+            <P class="col-4 text-center">20</P><a class="col-4 text-center" href="">+</a>
+            <hr class="ms-4 col-9 ">
           </div>
-          <div class="col-lg-7 col-sm-12 col-md-7 pt-3 ps-lg-5">
-              <h3 class="fw-bold pb-3 pt-3">Apple - Apple Watch Series 3 White Sports Band</h3>
-              <hr>
-              <span class = "product-price">100.50 DH</span>
-              <span class = "old-price text-dark ">200.50 DH</span>
-              <p class=" fw-bold pt-3 ps-1">QUANTITÉ</p>
-              <div class="pt-2 ps-1 row col-12">
-                <div class="quantité col-sm-12 col-lg-4 col-md-4  pt-2 row">
-                    <a class=" col-4 text-center" href="">-</a><P class="col-4 text-center">20</P><a class="col-4 text-center" href="">+</a>
-                    <hr class="ms-4 col-9 ">
-                </div>
-                <div class="ps-1 pt-1 adto d-flex col-6 row " >
-                  <button class=" col-8"><a href="">Add to Cart</a></button>
-                  <button class="heart col-3">
-                    <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-fill" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-                  </svg></a>
-                </button>
-                </div>
-              </div>
-              <div class="ps-1 pt-3">
-                <p class="fw-bold pb-1 ps-1">PRODUCT DETAILS</p>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci a sapien imperdiet maximus.
-                   Suspendisse vel ex eget mauris efficitur finibus eu a enim. Aenean tellus neque, consectetur sit amet lacus a,
-                    hendrerit ornare urna. Fusce venenatis lorem vitae augue suscipit, eu tempor massa vulputate. Praesent iaculis velit libero, 
-                  vel faucibus sem pulvinar vel. Curabitur viverra nisl dui, a venenatis felis pellentesque id. Donec non lacus diam.
-                </p>
-              </div>
+          <div class="ps-1 pt-1 adto d-flex col-7 row">
+            <button class="col-9 btn1"><a href="">Add to Cart</a></button>
+            <button class="heart col-3">
+              <a href=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-heart-fill" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                </svg></a>
+            </button>
           </div>
         </div>
-      </main>
-      <footer class="row container w-100 bg-dark">
-          <div class="col-4 logo text-white">
-            <span>K</span>OLCHI<span>.</span>
-          </div>
-          <div class="col-4">
+        <div class="ps-1 pt-3">
+          <p class="fw-bold pb-1 ps-1">PRODUCT DETAILS</p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum orci a sapien imperdiet maximus.
+            Suspendisse vel ex eget mauris efficitur finibus eu a enim. Aenean tellus neque, consectetur sit amet lacus
+            a,
+            hendrerit ornare urna. Fusce venenatis lorem vitae augue suscipit, eu tempor massa vulputate. Praesent
+            iaculis velit libero,
+            vel faucibus sem pulvinar vel. Curabitur viverra nisl dui, a venenatis felis pellentesque id. Donec non
+            lacus diam.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Footer -->
+  <footer class="bg-dark text-center text-white mt-5">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1 bg-white" href="#!" role="button">
+          <img src="icon/facebook.svg" alt=""> </a>
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1 bg-white" href="#!" role="button">
+          <img src="icon/twitter.svg" alt=""></a>
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1 bg-white" href="#!" role="button">
+          <img src="icon/google.svg" alt=""></a>
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating pb-2 bg-white" href="#!" role="button">
+          <img src="icon/instagram.svg" alt=""></a>
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1 bg-white" href="#!" role="button">
+          <img src="icon/youtube.svg" alt=""></a>
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1 bg-white" href="#!" role="button">
+          <img src="icon/github.svg" alt=""></a>
+      </section>
+      <section class="row">
+        <div class="d-flex justify-content-center">
+          <p class="pt-2">
+            <strong>Register for free</strong>
+          </p>
+          <button type="submit" class="btn btn-outline-light mb-4 ms-3">
+            SING UP!
+          </button>
+        </div>
+      </section>
+      <section class="mb-4">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+          repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+          eum harum corrupti dicta, aliquam sequi voluptate quas.
+        </p>
+      </section>
+    </div>
 
-          </div>
-          <div class="col-4">
-
-          </div>
-      </footer>
-      <script src="bootstrap.bundle.min.js"></script>
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2020 Copyright: koulchi team
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <script src="bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
