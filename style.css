@@ -296,7 +296,7 @@ aside{
 .item-cunt .btn2{
     background-color: #1363E2;
     width: 45px !important;
-    height: 45px;
+    height: 45px !important;
     border: none;
     border-radius: 50px;
 }
