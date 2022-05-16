@@ -1,3 +1,7 @@
+
+
+/* cart */
+
 .items-list{
     margin-top: 80px !important;
 }
@@ -33,3 +37,48 @@
 .price-cunt{
     text-align: center;
 }
+
+
+
+
+.cart-total{
+    border-top: #1363E2 2px solid;
+    padding: 20px !important;
+}
+
+.price-total{
+    font-size: 20px;
+    font-weight: 700;
+    color: #FF6120 !important;
+}
+.list-title{
+    background-color: #1363E2;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    padding-top: 10px;
+}
+
+
+
+.btn-total{
+    width: 200px !important;
+    margin: 0 auto;
+    background-color: #1363E2 ;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+}
+.btn-total .a{
+    color: #fff !important;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 17px;
+    font-weight: 500;
+}
+.btn-total:hover{
+    background-color:#FF6120;
+}
+
+
