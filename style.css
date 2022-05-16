@@ -276,7 +276,7 @@ aside{
     margin-top: 80px !important;
 }
 .item{
-    border-bottom: 1px solid #1362e232
+    border-bottom: 1px solid #1362e232;
 }
 .item-img{
     width: 120px !important;
@@ -295,9 +295,10 @@ aside{
 }
 .item-cunt .btn2{
     background-color: #1363E2;
-    width: 60px !important;
-    height: 30px;
+    width: 45px !important;
+    height: 45px;
     border: none;
+    border-radius: 50px;
 }
 .item-inp{
     width: 60px !important;
