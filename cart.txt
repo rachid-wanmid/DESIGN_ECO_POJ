@@ -1,0 +1,35 @@
+.items-list{
+    margin-top: 80px !important;
+}
+.item{
+    border-bottom: 1px solid #1362e232
+}
+.item-img{
+    width: 120px !important;
+    height: 120px !important;
+}
+
+
+.item-cunt{
+    margin: auto 0 !important;
+}
+.item-cunt .a{
+    text-decoration: none;
+    color: #fff !important;
+    font-size: 17px;
+    font-weight: 900;
+}
+.item-cunt .btn2{
+    background-color: #1363E2;
+    width: 60px !important;
+    height: 30px;
+    border: none;
+}
+.item-inp{
+    width: 60px !important;
+    height: 30px;
+}
+
+.price-cunt{
+    text-align: center;
+}
