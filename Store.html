@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top"  >
         <div class="container">
             <a class="navbar-brand bg-white fw-bold ms-4 logo pb-3" href="index.html">
                 <span>K</span>OULCHI<span>.</span>
@@ -85,20 +85,76 @@
             </div>
         </div>
     </nav>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+
+
+
+
+
+
+
 
 
 
 
 <!-- MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM -->
-    <main class="row mt-5 pt-4 ">
+    <main class="row mt-5 pt-5">
         <!-- position-sticky top-0 bottom-0 -->
-        <aside class="row d-flex flex-column col-lg-2 col-12   mt-2 mt-lg-2">
-            
-        </aside>
+        <a class="btn btn-primary col-12 w-25 mx-auto fit-btn shadow-none" data-bs-toggle="offcanvas" href="#sidebar" role="button" aria-controls="offcanvasExample">
+            <img src="icon/383135_filter_icon (1).png" class="fit " alt=""> Filter
+          </a>
+        <section id="sidebar"  class="col-6 col-lg-2 pt-4 offcanvas offcanvas-star" tabindex="-1"   aria-labelledby="offcanvasExampleLabel">
+            <div class="list-group pt-3">
+                <li><a href="#" class="list-group-item list-group-item-action mb-2 rounded  active-filter">All</a></li>
+                <h6 class="p-1 border-bottom">Catigory</h6>
+                <ul class="list-group">
+                    <li><a href="#" class="list-group-item list-group-item-action mb-2 rounded ">Living</a></li>
+                    <li><a href="#" class="list-group-item list-group-item-action mb-2 rounded">Dining</a></li>
+                    <li><a href="#" class="list-group-item list-group-item-action mb-2 rounded ">Office</a></li>
+                    <li><a href="#" class="list-group-item list-group-item-action mb-2 rounded ">Bedroom</a></li>
+                    <li><a href="#" class="list-group-item list-group-item-action mb-2 rounded ">Kitchen</a></li>
+                </ul>
+            </div>
+            <div>
+                <h6 class="p-1 border-bottom">Filter By Color</h6>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-action mb-2 rounded "><a href="#" class="a">
+                        Red
+                    </a></li>
+                    <li class="list-group-item list-group-item-action mb-2 rounded "><a href="#" class="a">
+                        Teal
+                    </a></li>
+                    <li class="list-group-item list-group-item-action mb-2 rounded "><a href="#" class="a">
+                        Blue
+                    </a></li>
+                </ul>
+            </div>
+            <div>
+                <h6>Filter By Price</h6>
+                <form class="ml-md-2 row w-100 justify-content-center">
+                    <div>
+                        <input type="range" id="volume" name="volume"
+                               min="0" max="11">
+                        <label for="volume">Volume</label>
+                      </div>
+                      
+                      <div>
+                        <input type="range" id="cowbell" name="cowbell" 
+                               min="0" max="100" value="90" step="10">
+                        <label for="cowbell">Cowbell</label>
+                      </div>
+                </form>
+            </div>
+        </section>
+        
+
+
 
 <!-- modifed -->
 
-        <section class="row d-flex justify-content-center col-lg-10 col-12 mt-3">
+        <section class="row d-flex justify-content-center  col-12 mt-3">
             <div class="col-3 product-item m-4">
                 <div class="product-img">
                     <img src="images/1 (1).jpg" alt="" class="img-fluid d-block mx-auto">
