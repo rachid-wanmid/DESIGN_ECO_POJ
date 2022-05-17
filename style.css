@@ -402,9 +402,7 @@ box-shadow: 0px 16px 12px -20px rgba(0,0,0,0.50);
     margin: 0;
 }
 
-.modal-backdrop{
-    margin-top: 83px !important;
-}
+ 
 
 .fit{
     width: 20px;
@@ -422,6 +420,9 @@ box-shadow: 0px 16px 12px -20px rgba(0,0,0,0.50);
 .active-filter{
     background-color: #8cb4f5 !important;
     color: #fff !important;
+}
+.active-filter:hover{
+    background-color: #FF6120 !important;
 }
 
 
