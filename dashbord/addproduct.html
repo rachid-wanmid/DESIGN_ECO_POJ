@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Add Product</title>
+</head>
+<body>
+<!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <a class="navbar-brand bg-white fw-bold ms-4" href="index.html">
+            <span class="span">Admin</span>
+            <span class="span">K</span>OULCHI<span class="span">.</span>
+          </a>
+          <a class="  bg-transparent border-0 shadow-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="black" class="bi bi-list bg-transparent" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+            </svg>
+          </a>
+          <div class="pucadm pe-3  ps-4 ms-auto">
+              <img src="fusacchia.jpg" alt=""> 
+          </div>
+        </div>
+      </nav>
+<!-- navbar -->
+      
+      
+<!-- sidebar  show -->
+  <div class="offcanvas canvas offcanvas-start bg-transparent border-0 " tabindex="0" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-body sidr p-0">
+      <div class="  bg-white">
+        <a class="shadow-none menu border-top-2" href="index.html"  aria-controls="">Dashboard</a>
+        <a class="shadow-none menu border-top-2" href="addproduct.html"   aria-controls="">Add Product</a>
+        <a class="shadow-none menu border-top-2" href="Listproducts.html"   aria-controls="">List Products</a>
+      </div>
+    </div>
+  </div>     
+<!-- sidebar -->
+
+
+<!--main-->
+<main class="container">
+  <h2 class=" text-center fw-bold p-3 h2">
+    Create Product
+  </h2>
+  <div class="container justify-content-center d-lg-flex d-sm-block ">
+    <form class="row  all pt-5 ms-1 justify-content-center d-flex col-lg-7">
+        <div class="col-lg-10 col-sm-12 mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Product title</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="title" required="required">
+        </div>
+        <div class="col-lg-5 col-sm-6 mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Previous price</label>
+          <input type="number" min="0" class="form-control" id="exampleFormControlInput1" placeholder="Dhs" required="required">
+        </div>
+        <div class="col-lg-5 col-sm-6 mb-3 ">
+          <label for="exampleFormControlInput1" class="form-label col ">Current price</label>
+          <input type="number" min="0" class="form-control" id="exampleFormControlInput1" placeholder="Dhs" required="required">
+        </div>
+        <div class="mb-3 col-lg-10 col-sm-12">
+          <label for="exampleFormControlTextarea1" class="form-label">Label</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Type here" required="required"></textarea>
+        </div>
+        <label for="" class="col-lg-10 col-sm-12 pb-2 form-label">Images</label>
+        <div class="mb-3 col-lg-10 col-sm-10 col-md-10">
+          <img class=" upload me-3"  src="IMAGE/4 (1).jpg" alt="">
+          <img class=" upload me-3"  src="IMAGE/1 (1).jpg" alt="">
+          <img class=" upload me-3"  src="IMAGE/1.jpg" alt="">
+          <img class=" upload me-3"  src="IMAGE/2 (1).jpg" alt="">
+          <img class=" upload me-3"  src="IMAGE/3 (1).jpg" alt="">
+          <img class=" upload me-3" onclick="selectFiles();" id="image" src="upload-cloud-icon-16.jpg " alt="">
+        </div> 
+        <div class="col-lg-10 col-sm-12 mb-2">
+          <label for="inputState" class="form-label">Category</label>
+          <select id="inputState " class="form-select w-50" required="required">
+            <option selected>Choose...</option>
+            <option>Category 1</option>
+            <option>Category 2</option>
+            <option>Category 3</option>
+          </select>
+        </div>
+        <div class="col-lg-10 col-sm-12 p-3 mb-2 ps-2">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Publish on site
+            </label>
+          </div>
+        </div>
+        <div class="col-lg-10 col-sm-12">
+          <button type="submit" class="btn btn-primary mb-3 adp shadow-none">Add Product</button>
+        </div>
+    </form>
+  </div>
+</main>
+    <script>
+      function selectFiles(){
+          
+      }
+    </script>
+<!--main-->
+
+
+   <script src="bootstrap.bundle.min.js"></script>
+   <script src="jquery-3.6.0.min.js"></script> 
+</body>
+</html>
